@@ -3,7 +3,9 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-const API_URL = process.env.https://flowdesk-app.onrender.com || 'http://localhost:5000/api';
+const API_URL = process.env.https://flowdesk-app-1.onrender.com;
+
+fetch(`${API}/api/users`);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
